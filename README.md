@@ -23,8 +23,8 @@ WRF/WPS releases in the links, below. If you happen to be working with an older
 version of the WRF modeling system, we strongly encourage you to try reproducing
 your setup with the current WRF/WPS releases.
 
-[WPS v4.3.x](https://www2.mmm.ucar.edu/people/duda/files/debug/WPS_v4.3.tar.gz]
-[WRF v4.3.x](https://www2.mmm.ucar.edu/people/duda/files/debug/WRF_v4.3.tar.gz]
+Version 4.3.x: [WPS](https://www2.mmm.ucar.edu/people/duda/files/debug/WPS_v4.3.tar.gz)
+    [WRF](https://www2.mmm.ucar.edu/people/duda/files/debug/WRF_v4.3.tar.gz)
 
 After downloading a basic configuration, you can unpack the tar file *within
 your `WPS` or `WRF/run` directory* before trying to run the WPS programs or the
@@ -37,7 +37,7 @@ to work towards your configuration (which is not working) is as follows. Each
 of the steps in the outline below is a link to more detailed information about
 that step.
 
-#### Incremental configuration changes
+### Incremental configuration changes
 - Adjust the coarse horizontal domain so that it matches your configuration
 - Adjust the vertical grid so that it matches your configuration
 - Try with more than on MPI task
