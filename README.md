@@ -52,13 +52,13 @@ that step.
 ## Plan for incremental changes to basic configuration
 
 - [Adjust the horizontal domain so that it matches your configuration](#adjust-the-horizontal-domain)
-- Adjust the vertical grid so that it matches your configuration
-- Try with more than on MPI task
+- [Adjust the vertical grid so that it matches your configuration](#adjust-the-vertical-grid)
+- [Try with more than on MPI task](#use-multiple-mpi-tasks)
 - Add the first nested domain (if nested domains are being used)
 - Change physics suite / schemes to match
 - Activate model option one at a time (e.g., adaptive timestep, DFI, etc.)
 
-#### Adjust the horizontal domain
+### Adjust the horizontal domain
 
 The idea here is to change only the geographic location, horizontal resolution, and
 number of gridpoints in the single horizontal domain.
@@ -67,13 +67,13 @@ number of gridpoints in the single horizontal domain.
 try changing one aspect of the horizontal domain at a time: geographic location,
 then resolution, and finally number of gridpoints.*
 
-#### Adjust the vertical grid
+### Adjust the vertical grid
 
 If you are using something other than the default vertical grid, you can rerun the real.exe
 program after editing the namelist.input file to use the same vertical levels as in your
 failed model setup.
 
-#### Use multiple MPI tasks
+### Use multiple MPI tasks
 
 Try using more than one MPI task.
 
