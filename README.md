@@ -28,6 +28,16 @@ your setup with the current WRF/WPS releases.
 | 4.3.x       | [WPS](https://www2.mmm.ucar.edu/people/duda/files/debug/WPS_v4.3.tar.gz) | [WRF](https://www2.mmm.ucar.edu/people/duda/files/debug/WRF_v4.3.tar.gz) |
 | 4.2.x       | [WPS](https://www2.mmm.ucar.edu/people/duda/files/debug/WPS_v4.2.tar.gz) | [WRF](https://www2.mmm.ucar.edu/people/duda/files/debug/WRF_v4.2.tar.gz)
 
+In addition to the basic configurations for the WPS and WRF model, meteorological
+data are needed by the WPS. The following links provide three time periods of GFS
+0.25-degree data that have been verified to work well with the basic configuration:
+
+[2022-01-01 00 UTC](https://www2.mmm.ucar.edu/people/duda/files/debug/gfs_2021010100.grib2)
+
+[2022-01-01 03 UTC](https://www2.mmm.ucar.edu/people/duda/files/debug/gfs_2021010103.grib2)
+
+[2022-01-01 06 UTC](https://www2.mmm.ucar.edu/people/duda/files/debug/gfs_2021010106.grib2)
+
 After downloading a basic configuration, you can unpack the tar file *within
 your `WPS` or `WRF/run` directory* before trying to run the WPS programs or the
 WRF model. It's critically important to verify that the basic configuration runs
