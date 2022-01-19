@@ -49,11 +49,34 @@ to work towards your configuration (which is not working) is as follows. Each
 of the steps in the outline below is a link to more detailed information about
 that step.
 
-### Incremental configuration changes
-- Adjust the coarse horizontal domain so that it matches your configuration
+## Plan for incremental changes to basic configuration
+
+- [Adjust the horizontal domain so that it matches your configuration](#adjust-the-horizontal-domain)
 - Adjust the vertical grid so that it matches your configuration
 - Try with more than on MPI task
 - Add the first nested domain (if nested domains are being used)
 - Change physics suite / schemes to match
 - Activate model option one at a time (e.g., adaptive timestep, DFI, etc.)
+
+#### Adjust the horizontal domain
+
+The idea here is to change only the geographic location, horizontal resolution, and
+number of gridpoints in the single horizontal domain.
+
+*Tip: If your simulation fails after changing the horizontal domain, you can then
+try changing one aspect of the horizontal domain at a time: geographic location,
+then resolution, and finally number of gridpoints.*
+
+#### Adjust the vertical grid
+
+If you are using something other than the default vertical grid, you can rerun the real.exe
+program after editing the namelist.input file to use the same vertical levels as in your
+failed model setup.
+
+#### Use multiple MPI tasks
+
+Try using more than one MPI task.
+
+*Tip: If the model now fails when attempting to use the same number of MPI tasks as in
+your failed model setup, try gradually increasing the number of MPI tasks.*
 
